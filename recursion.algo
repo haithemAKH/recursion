@@ -1,0 +1,11 @@
+FUNCTION is_palindrome(word:STRING):BOOLEAN;
+BEGIN
+    if word.length <= 1 then
+        return true
+    END_IF
+      if word[0] = word[word.length-1] then
+        return is_palindrome substring (word, 1, word.lenght-2)
+      else
+        return false
+       end if
+END.
